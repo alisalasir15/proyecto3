@@ -27,9 +27,9 @@ Estoy escribiendo *un texto* con **varios formatos** y parece que funciona.
 
 
 ## Tareas
-- [ ] Tarea1 
-- [*] Tarea2 
-- [ ] Tarea3  
+- [ ] Tarea1  
+- [*] Tarea2  
+- [ ] Tarea3    
 
 ```SQL
 select * from alumnos where id alumno like 'A%'
