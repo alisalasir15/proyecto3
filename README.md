@@ -28,7 +28,7 @@ Estoy escribiendo *un texto* con **varios formatos** y parece que funciona.
 
 ## Tareas
 - [ ] Tarea1  
-- [+] Tarea2  
+- [X] Tarea2  
 - [ ] Tarea3    
 
 ```SQL
