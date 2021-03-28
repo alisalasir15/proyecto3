@@ -9,4 +9,4 @@ foreach ($asistente in $misDatosReunion){
 }
 
 
-Import-Csv $ArchivoReunion -Delimiter ';' |ForEach-Object {Write-Host ($_.Nombre + "      " + $_.Correo)}
+Import-Csv $ArchivoReunion -Delimiter ';' |ForEach-Object {Write-Host ($_.Nombre + " ***** " + $_.Correo)}
