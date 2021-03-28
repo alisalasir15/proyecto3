@@ -8,12 +8,5 @@ foreach ($asistente in $misDatosReunion){
     Write-Host ($asistente.Nombre + "      " + $asistente.Correo)
 }
 
-$TodosLosNombres = "" 
-$TodosLosCorreos = ""
-Import-Csv $ArchivoReunion -Delimiter ';' | 
-    ForEach-Object {
-        $TodosLosNombres += " +++ " + $_.Nombre
-        $TodosLosCorreos += " +++ " + $_.Correo
-    }
-Write-Host($TodosLosNombres)
-Write-Host($TodosLosCorreos)
+
+Import-Csv $ArchivoReunion -Delimiter ';' |ForEach-Object {Write-Host ($_.Nombre + "      " + $_.Correo)}
