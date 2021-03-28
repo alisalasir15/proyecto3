@@ -1,19 +1,14 @@
+# Código para leer un archivo .csv y mostrar los datos de determinadas columnas
+# Javier Terán
+# 28/03/2021 
 
-
-$RutaArchivos  = $env:USERPROFILE +"\documents\GitHub\Proyecto3\Powershell\"
-$ArchivoReunion = $RutaArchivos + "01LeerCSV.csv"
-
+$ArchivoReunion  = $env:USERPROFILE +"\documents\GitHub\Proyecto3\Powershell\01LeerCSV.csv"
+#Utilizando variables intermedias
 $misDatosReunion = Import-Csv $ArchivoReunion -Delimiter ";"
 foreach ($asistente in $misDatosReunion) {
     Write-Host ($asistente.Nombre + "---" + $asistente.Rol + "--- " + $asistente.Correo)
 }
 
-$TodosLosNombres = "" 
-$TodosLosCorreos = ""
-Import-Csv $ArchivoReunion -Delimiter ';' | 
-    ForEach-Object {
-        $TodosLosNombres += " +++ " + $_.Nombre
-        $TodosLosCorreos += " +++ " + $_.Correo
-    }
 
-    Write-Host ($TodosLosNombres)
+#Sin utilizar variables intermedias y utilizando pipes/tuberías
+Import-Csv $ArchivoReunion -Delimiter ';' |ForEach-Object {Write-Host ($_.Nombre + " **** " + $_.Correo)}
