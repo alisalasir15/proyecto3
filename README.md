@@ -14,7 +14,7 @@ Estoy escribiendo *un texto* con **varios formatos** y parece que funciona.
         * ss1
         * ss2  
   
-[Alisalasir15 en Github](https://gihub.com/alisalasir15)
+[Alisalasir15 en Github](https://github.com/alisalasir15)
 
 ### Imagen 1 del marcado
 
@@ -59,9 +59,11 @@ carmen| ancar@nas.si
 GitHub supports emoji!  
 :+1:  
 :sparkles:
-:camel: :tada:  
-:rocket: :metal: :octocat:  
-
+:camel: 
+:tada:  
+:rocket: 
+:metal: 
+:octocat:  
 :first_quarter_moon:
 
 ## Texto citado
