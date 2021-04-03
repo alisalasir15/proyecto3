@@ -14,7 +14,7 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 
-#IGNORAR CSHARP
+#IGNORAR CSharp/C#
 
 [Bb]in/
 [Oo]bj/
