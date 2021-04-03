@@ -1,6 +1,7 @@
-# Proyecto3
+# :first_quarter_moon: Proyecto3. Distintos lenguajes y extensiones
 
-## Parte 1
+:metal:
+## :octocat: Parte 1
 
 **Mi primer texto**
 *Texto en cursiva*
@@ -16,19 +17,23 @@ Estoy escribiendo *un texto* con **varios formatos** y parece que funciona.
   
 [Alisalasir15 en Github](https://github.com/alisalasir15)
 
-### Imagen 1 del marcado
+### :rocket: Imagen 1 del marcado
 
 ![Marcado 1](/Fotos/Markdown1.png)  
 
-### Imagen 2 del marcado
+### :tada: Imagen 2 del marcado
 
 ![Marcado 2](/Fotos/Markdown2.png)  
 
-## Tareas
+## :camel: Tareas
 
-* [ ] Tarea1  
-* [X] Tarea2  
-* [ ] Tarea3  
+* [X] Powershell   
+* [X] CSharp  
+* [X] Java  
+* [ ] Python
+* [ ] Notebook
+* [ ] Docker. Docker-file
+* [ ] Ubuntu
 
 ```SQL
 select * from alumnos where id alumno like 'A%'
@@ -49,7 +54,7 @@ write-host("hola")
 import-csv alumnos.csv -delimiter ";"
 ```
 
-## Tabla de alumnos
+## :sparkles: Tabla de alumnos
 
 Alumno | Correo
 -------|------
@@ -57,16 +62,9 @@ javi|  asdc@con.es
 carmen| ancar@nas.si
 
 GitHub supports emoji!  
-:+1:  
-:sparkles:
-:camel: 
-:tada:  
-:rocket: 
-:metal: 
-:octocat:  
-:first_quarter_moon:
 
-## Texto citado
+
+## :+1:  Texto citado
 
 Javier dijo:
 
