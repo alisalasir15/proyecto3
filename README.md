@@ -1,39 +1,59 @@
-# :first_quarter_moon: Proyecto3. Distintos lenguajes y extensiones
+# :first_quarter_moon: Visual Studio Codeo con distintos lenguajes y extensiones
 
-:metal:
-## :octocat: Parte 1
+## :octocat: Explicación de intención del proyecto
 
-**Mi primer texto**
-*Texto en cursiva*
-
-Estoy escribiendo *un texto* con **varios formatos** y parece que funciona.
-
-1. Principal
-2. Secundario
-    1. secundario 2
-    2. secundario 3
-        * ss1
-        * ss2  
-  
 [Alisalasir15 en Github](https://github.com/alisalasir15)
 
-### :rocket: Imagen 1 del marcado
+Proyecto público que enlaza **Visual Studio Code - GitHub - Git**
+para mostar como se trabaja con distintos tipos de archivos, *distintas extensiones* y otras curiosidades que vayan surgiendo.
+
+Al final trabajaremos en **windows** y en **ubuntu (por ssh)**
+
+ 
+  
+## :metal: Lenguage de Marcado. Markdown
+
+### :rocket: Imagen 1 del marcado. Markdown
 
 ![Marcado 1](/Fotos/Markdown1.png)  
 
-### :tada: Imagen 2 del marcado
+### :tada: Imagen 2 del marcado. Markdown
 
 ![Marcado 2](/Fotos/Markdown2.png)  
 
-## :camel: Tareas
+## :camel: Lenguajes de programación y tipos de archivos incluidos
 
-* [X] Powershell   
+* [X] Powershell  
 * [X] CSharp  
 * [X] Java  
 * [ ] Python
 * [ ] Notebook
 * [ ] Docker. Docker-file
-* [ ] Ubuntu
+* [ ] Ubuntu/ssh. Powershell
+* [ ] Ubuntu/ssh. CSharp ??
+* [ ] Ubuntu/ssh. Java
+* [ ] Ubuntu/ssh. Python
+* [ ] Ubuntu/ssh. Notebook
+
+* [ ] Ubuntu.
+* [ ] Ubuntu.
+
+1. Powershell
+2. CSharp
+3. Python
+    1. .py
+    2. .ipynb
+
+## :sparkles: Tipos de archivos  
+
+Archivo | Extensión
+-------|------
+Powershell |  .ps1
+CSharp | .cs
+Python | .py
+Notebook | .ipynb
+
+## :sparkles: Códigos de ejemplo  
 
 ```SQL
 select * from alumnos where id alumno like 'A%'
@@ -53,16 +73,6 @@ print ("Hola)
 write-host("hola")
 import-csv alumnos.csv -delimiter ";"
 ```
-
-## :sparkles: Tabla de alumnos
-
-Alumno | Correo
--------|------
-javi|  asdc@con.es
-carmen| ancar@nas.si
-
-GitHub supports emoji!  
-
 
 ## :+1:  Texto citado
 

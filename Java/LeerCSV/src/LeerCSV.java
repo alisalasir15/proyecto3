@@ -1,6 +1,10 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-
+/**
+ *
+ * @author Javier Terán González 02/04/2021
+ * Lectura de un archivo CSV
+ */
 public class LeerCSV {
     public static void main(String[] args) throws Exception {
         BufferedReader br=null;

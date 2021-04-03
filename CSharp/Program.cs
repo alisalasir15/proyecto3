@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+/**
+ *
+ * @author Javier Terán González 02/04/2021
+ * Lectura de un archivo CSV
+ */
 namespace CSharp
 {
     class Program
