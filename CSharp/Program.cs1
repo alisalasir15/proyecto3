@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 /**
  *
  * @author Javier Terán González 02/04/2021
- * Lectura de un archivo CSV
+ * Lectura de un array en BASE64
+ * dotnet build
+ * dotnet run
  */
 namespace CSharp
 {
