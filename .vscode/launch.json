@@ -1,6 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
+    {
+        "name": "PowerShell docker wp.ps1 Launch Script",
+        "type": "PowerShell",
+        "request": "launch",
+        "script": "${workspaceFolder}/Temp/docker/wordpress/wp.ps1",
+        "cwd": "${workspaceFolder}/Temp/docker/wordpress"
+    },
         {
             "type": "java",
             "name": "Launch LeerCSV",
