@@ -18,3 +18,4 @@ gradle-app.setting
 
 [Bb]in/
 [Oo]bj/
+.vscode/settings.json
