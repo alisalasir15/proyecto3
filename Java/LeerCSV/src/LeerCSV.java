@@ -11,6 +11,7 @@ public class LeerCSV {
         try {
             br = new BufferedReader(new FileReader("./Java/01LeerCSV.csv"));
             String linea = br.readLine();
+            System.out.println("Desde Java");
             while (null!=linea) {
                 String [] columnas = linea.split(";");
                 System.out.println(columnas[0] + " - " + columnas[4]+ " - " + columnas[5]);

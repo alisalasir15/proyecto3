@@ -2,6 +2,7 @@
 # LEctura de fichero CSV
 # 03/04/2021
 import csv
+print("Desde python")
 with open ('./Python/01LeerCSV.csv') as File:
     misDatosReunion = csv.DictReader (File, delimiter=';')
     for asistente in misDatosReunion:

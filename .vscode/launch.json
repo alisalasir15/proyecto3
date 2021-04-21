@@ -6,6 +6,13 @@
             "name": "Launch LeerCSV",
             "request": "launch",
             "mainClass": "LeerCSV",
+            "projectName": "proyecto3_babba84e"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeerCSV",
+            "request": "launch",
+            "mainClass": "LeerCSV",
             "projectName": "proyecto3-1_fa72d272"
         },
         {

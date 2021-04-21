@@ -2,15 +2,15 @@
 # Javier Terán
 # 28/03/2021 
 #Esto funciona en ruta windows
-$ArchivoReunion  = $env:USERPROFILE +"\documents\GitHub\Proyecto3\Powershell\01LeerCSV.csv"
+#$ArchivoReunion  = $env:USERPROFILE +"\documents\GitHub\Proyecto3\Powershell\01LeerCSV.csv"
 #Esto funciona en ruta linux
-#$ArchivoReunion  = "/home/javiteran/GitHub/proyecto3-1/Powershell/01LeerCSV.csv"
+$ArchivoReunion  = "/home/javiteran/GitHub/proyecto3/Powershell/01LeerCSV.csv"
 #Utilizando variables intermedias
+Write-host("Powershell")
 $misDatosReunion = Import-Csv $ArchivoReunion -Delimiter ";"
 foreach ($asistente in $misDatosReunion) {
     Write-Host ($asistente.Nombre + "---" + $asistente.Rol + "--- " + $asistente.Correo)
 }
-
 
 #Sin utilizar variables intermedias y utilizando pipes/tuberías
 Import-Csv $ArchivoReunion -Delimiter ';' |ForEach-Object {Write-Host ($_.Nombre + " **** " + $_.Correo)}
