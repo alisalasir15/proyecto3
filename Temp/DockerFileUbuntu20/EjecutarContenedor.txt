@@ -1,0 +1,9 @@
+
+#Crea una imagen
+docker build . -t Proyecto03ub2004
+
+docker images
+
+docker run -ti  -d -p 8500:80 Proyecto03ub2004 /bin/bash
+
+docker exec -ti  .....  /bin/bash

@@ -1,0 +1,51 @@
+# Crea un fichero docker-compose en el que se despliegue una aplicación NextCloud. 
+#Utiliza dos contenedores
+#   - Contenedor con Apache y NextCloud
+#   - Contenedor con MariaDb
+
+# Para ejecutarlo
+#docker-compose up
+#docker ps    para ver el contenedor que se ha lanzado
+version: '3.7'
+services:
+  nc:
+    image: nextcloud:apache
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+    
+      - nc_data:/var/www/html
+    networks:
+      - RedPublica
+      - RedBBDD
+    environment:
+      - REDIS_HOST=redis
+      - MYSQL_HOST=db
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=nextcloud
+  redis:
+    image: redis:alpine
+    restart: always
+    networks:
+      - RedPublica
+  db:
+    image: mariadb
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - RedBBDD
+    environment:
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_ROOT_PASSWORD=nextcloud
+      - MYSQL_PASSWORD=nextcloud
+volumes:
+  db_data:
+  nc_data:
+networks:
+  RedBBDD:
+  RedPublica:

@@ -1,12 +1,10 @@
-#Tarea03
 # Crea un fichero docker-compose en el que se despliegue una aplicación WordPress. 
-# Se debe utilizar al menos dos servicios y especificar una red compartida por ambos servicios.
+#Utiliza dos contenedores
+#   - Contenedor con Servidor Web y Wordpress
+#   - Contenedor con Mysql
 
 # Para ejecutarlo
 #docker-compose up
-
-#Para ejecutarlo con variables de entorno
-#docker-compose --env-file .env.dev up 
 #docker ps    para ver el contenedor que se ha lanzado
 version: "3"
     
@@ -16,10 +14,10 @@ services:
     restart: always
     environment:
    #pasar esto a un endfile
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PW}
-      MYSQL_PASSWORD: ${DB_PW}
+      MYSQL_DATABASE: wordpress570
+      MYSQL_USER: wordpress570
+      MYSQL_ROOT_PASSWORD: wordpress570
+      MYSQL_PASSWORD: pass
       #MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db8wp_data:/var/lib/mysql      
@@ -34,9 +32,9 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db8wp:3306
-      WORDPRESS_DB_USER: ${DB_USER}
-      WORDPRESS_DB_PASSWORD: ${DB_PW}
-      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DB_USER: wordpress570
+      WORDPRESS_DB_PASSWORD: wordpress570
+      WORDPRESS_DB_NAME: wordpress570
     volumes:
       - wordpress570:/var/www/html
     networks:
