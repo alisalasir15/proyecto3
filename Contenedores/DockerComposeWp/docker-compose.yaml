@@ -1,0 +1,42 @@
+#docker-compose up 
+version: '3'
+services:
+    db8wp:
+      image: mysql:8
+      restart: always
+      environment:
+     #pasar esto a un endfile
+        MYSQL_DATABASE: wordpress570
+        MYSQL_USER: wordpress570
+        MYSQL_ROOT_PASSWORD: wordpress570
+        MYSQL_PASSWORD: wordpress570
+        #MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      volumes:
+        - db8wp_data:/var/lib/mysql      
+      networks:
+        - wp570-mysql8-interna
+    wordpress570:
+        depends_on:
+            - db8wp
+        image: wordpress:5.7.0
+        ports:
+            - "8001:80"
+        restart: always
+        environment:
+            WORDPRESS_DB_HOST: db8wp:3306
+            WORDPRESS_DB_USER: wordpress570
+            WORDPRESS_DB_PASSWORD: wordpress570
+            WORDPRESS_DB_NAME: wordpress570
+        volumes:
+            - wordpress570:/var/www/html
+        networks:
+            - wp570-mysql8-interna
+            - wp570-publica        
+volumes:
+  db8wp_data: {}
+  wordpress570: {}
+#Se crean dos redes. Una especifica entre el wp y el mysql
+# y otra publica para el wordpress
+networks: 
+  wp570-mysql8-interna:
+  wp570-publica:          
