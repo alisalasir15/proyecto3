@@ -18,7 +18,7 @@ services:
     wordpress570:
         depends_on:
             - db8wp
-        image: wordpress:5.7.0
+        image: wordpress:latest
         ports:
             - "8001:80"
         restart: always
