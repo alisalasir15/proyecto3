@@ -1,42 +1,42 @@
 #docker-compose up 
 version: '3'
 services:
-    db8wp:
+    contenedor_mysql:
       image: mysql:8
       restart: always
       environment:
      #pasar esto a un endfile
-        MYSQL_DATABASE: wordpress570
-        MYSQL_USER: wordpress570
-        MYSQL_ROOT_PASSWORD: wordpress570
-        MYSQL_PASSWORD: wordpress570
+        MYSQL_DATABASE:      miwordpress
+        MYSQL_USER:          miwordpress
+        MYSQL_ROOT_PASSWORD: miwordpress
+        MYSQL_PASSWORD:      miwordpress
         #MYSQL_RANDOM_ROOT_PASSWORD: '1'
       volumes:
-        - db8wp_data:/var/lib/mysql      
+        - mysql_data:/var/lib/mysql      
       networks:
-        - wp570-mysql8-interna
-    wordpress570:
+        - red-interna
+    contenedor_wordpress:
         depends_on:
-            - db8wp
+            - contenedor_mysql
         image: wordpress:latest
         ports:
             - "8001:80"
         restart: always
         environment:
-            WORDPRESS_DB_HOST: db8wp:3306
-            WORDPRESS_DB_USER: wordpress570
-            WORDPRESS_DB_PASSWORD: wordpress570
-            WORDPRESS_DB_NAME: wordpress570
+            WORDPRESS_DB_HOST:     contenedor_mysql:3306
+            WORDPRESS_DB_USER:     miwordpress
+            WORDPRESS_DB_PASSWORD: miwordpress
+            WORDPRESS_DB_NAME:     miwordpress
         volumes:
-            - wordpress570:/var/www/html
+            - wordpress_data:/var/www/html
         networks:
-            - wp570-mysql8-interna
-            - wp570-publica        
+            - red-interna
+            - red-publica        
 volumes:
-  db8wp_data: {}
-  wordpress570: {}
+  mysql_data: {}
+  wordpress_data: {}
 #Se crean dos redes. Una especifica entre el wp y el mysql
 # y otra publica para el wordpress
 networks: 
-  wp570-mysql8-interna:
-  wp570-publica:          
+  red-interna:
+  red-publica:          
