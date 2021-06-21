@@ -26,14 +26,14 @@ Al final trabajaremos en **windows** y en **ubuntu (por ssh)**
 * [X] Powershell  
 * [X] CSharp  
 * [X] Java  
-* [ ] Python
-* [ ] Notebook
-* [ ] Docker. Docker-file
-* [ ] Ubuntu/ssh. Powershell
-* [ ] Ubuntu/ssh. CSharp ??
-* [ ] Ubuntu/ssh. Java
-* [ ] Ubuntu/ssh. Python
-* [ ] Ubuntu/ssh. Notebook
+* [X] Python
+* [X] Notebook
+* [X] Docker. Docker-file
+* [X] Ubuntu/ssh. Powershell
+* [X] Ubuntu/ssh. CSharp ??
+* [X] Ubuntu/ssh. Java
+* [X] Ubuntu/ssh. Python
+* [X] Ubuntu/ssh. Notebook
 
 * [ ] Ubuntu.
 * [ ] Ubuntu.
