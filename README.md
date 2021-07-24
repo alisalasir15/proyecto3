@@ -35,8 +35,6 @@ Al final trabajaremos en **windows** y en **ubuntu (por ssh)**
 * [X] Ubuntu/ssh. Python
 * [X] Ubuntu/ssh. Notebook
 
-* [ ] Ubuntu.
-* [ ] Ubuntu.
 
 1. Powershell
 2. CSharp
