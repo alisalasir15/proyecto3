@@ -1,4 +1,3 @@
-
 #Crea una imagen
 docker build . -t proyecto03ubapache21
 docker images
