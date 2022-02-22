@@ -1,4 +1,4 @@
-# :first_quarter_moon: Visual Studio Codeo con distintos lenguajes y extensiones
+# :first_quarter_moon: Visual Studio Code con distintos lenguajes y extensiones
 
 ## :octocat: Explicación de intención del proyecto
 
